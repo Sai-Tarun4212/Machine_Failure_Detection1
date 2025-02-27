@@ -1,6 +1,10 @@
 import base64
 import pickle
 import pandas as pd
+import sklearn
+from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.compose import ColumnTransformer
 import streamlit as st
 
 
