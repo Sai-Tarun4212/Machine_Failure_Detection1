@@ -1,10 +1,9 @@
-import streamlit as st
-import pandas as pd
-from sklearn.linear_model import LogisticRegression
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.compose import ColumnTransformer
-import pickle
 import base64
+import pickle
+import pandas as pd
+import streamlit as st
+
+
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
